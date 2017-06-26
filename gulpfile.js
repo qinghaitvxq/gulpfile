@@ -1,6 +1,3 @@
-# gulpfile.js
-#### gulpfile.js 基本配置
-```
 var gulp =require("gulp"),
     uglify=require("gulp-uglify"),
     sass=require("gulp-sass"),
@@ -17,7 +14,6 @@ gulp.task("scripts",function () {
         .pipe(uglify())
         .pipe(gulp.dest("build/js"));
 });
-
 
 //Style Task
 gulp.task("styles", function() {
@@ -51,5 +47,3 @@ gulp.task("watch",function () {
 
 gulp.task("default",["scripts","styles","watch"]);
 
-
-```
